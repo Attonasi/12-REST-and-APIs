@@ -3,9 +3,9 @@
 const pg = require('pg');
 const express = require('express');
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 const app = express();
-const conString = process.env.DATABASE_URL || 'postgres://localhost:5432';
+const conString = process.env.DATABASE_URL || 'postgres://postgres:Joy1is1me!@localhost:5432/postgres';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
